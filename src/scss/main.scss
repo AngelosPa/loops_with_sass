@@ -19,14 +19,31 @@ $stars-count: 36; // corresponds to the number of divs in your HTML
   animation-duration: $duration;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+}
+@mixin lightanime($duration) {
+  animation-name: light;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+@keyframes light {
+  0% {
+    box-shadow: 0 0 6px 2px rgb(73, 3, 3),
+      -4px -0px 20px -1px rgba(105, 7, 7, 0.431);
+  }
+
+  100% {
+    box-shadow: 0 0 6px 2px rgb(255, 255, 255),
+      -4px -0px 20px -1px rgba(255, 231, 124, 0.431);
+  }
 }
 
 // Mixin to make the stars
 @mixin sterne {
-  background: white;
-  border-radius: 100%;
-
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
+  position: absolute;
   //   clip-path: polygon(
   //     49% 0%,
   //     58% 43%,
@@ -39,7 +56,10 @@ $stars-count: 36; // corresponds to the number of divs in your HTML
   //     0% 35%,
   //     47% 41%
   //   );
-  box-shadow: 1rem 1rem 1rem 1rem blue;
+  border-radius: 50%;
+
+  box-shadow: 0 0 6px 2px rgb(16, 2, 98),
+    -4px -0px 20px -1px rgba(255, 255, 255, 0.431);
 }
 
 body {
@@ -59,7 +79,7 @@ body {
 
     width: 1.5rem;
     height: 1.5rem;
-    position: absolute;
+
     left: 5 + $i * $i + rem;
     top: 1 + $i * 4 + rem;
   }
@@ -70,7 +90,7 @@ body {
     @include sterne();
     width: 1.9rem;
     height: 1.8rem;
-    position: absolute;
+
     left: 14 + ($i * $i)/2 + rem;
     top: 14 + $i + rem;
   }
@@ -81,12 +101,11 @@ body {
     @include sterne();
     width: 1.2rem;
     height: 1.2rem;
-    position: absolute;
+
     left: -17 + ($i * $i)/5 + rem;
     top: -32 + $i * 4 + rem;
   }
 }
-
 // random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
 
 .stars-container {
@@ -121,34 +140,14 @@ body {
   box-shadow: 0px 0px 15px 1px rgba(243, 245, 148, 0.637);
   @include add-move-animation(6+3s);
 }
-// // For loop to randomize values for each div bar
-// @for $i from 1 through $stars-count {
-//   .star:nth-child(#{$i}) {
-//     background: linear-gradient(
-//       to bottom right,
-//       lighten(orange, random(40)),
-//       rgba(darken(orange, random(10)), 1)
-//     );
-//     // random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
-//     height: random(60) + 10 + vh;
-//     border-radius: 0 0 ((random(50) + 10 + px)) ((random(50) + 10 + px));
-//     transform-origin: 0 0;
-
-//     @if (($i % 2) != 0) {
-//       border-radius: ((random(50) + 10 + px)) ((random(20) + 10 + px)) 0 0;
-//       background: linear-gradient(
-//         to top right,
-//         lighten(gray, random(40)),
-//         rgba(darken(gray, random(10)), 1)
-//       );
-//     }
-//     // The lighten() function increases lightness by a fixed amount.
-//     // The darken() function decreases lightness by a fixed amount.
-//     @include add-move-animation(random(5) + 1 + s);
-//   }
-// }
-
-// .star:nth-child(odd) {
-//   align-self: end;
-//   transform-origin: 0 100%;
-// }
+// For loop to randomize values for each div bar
+@for $i from 1 through $stars-count {
+  .star:nth-child(#{$i}) {
+    @if (fibonacci($i) != 0) {
+      border-radius: ((random(50) + 100 + px)) ((random(20) + 100 + px)) 0 0;
+      @include lightanime(5s);
+    }
+    // The lighten() function increases lightness by a fixed amount.
+    // The darken() function decreases lightness by a fixed amount.
+  }
+}
