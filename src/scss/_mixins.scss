@@ -1,0 +1,24 @@
+// Mixin to use animation
+@mixin add-move-animation($duration) {
+  animation-name: move;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+@mixin lightanime($duration) {
+  animation-name: light;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+}
+@mixin sterne {
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
+  position: absolute;
+  border-radius: ((random(50) + 100 + px)) ((random(20) + 100 + px)) 0 0;
+  border-radius: 50%;
+
+  box-shadow: 0 0 6px 2px rgb(16, 2, 98),
+    -4px -0px 20px -1px rgba(255, 255, 255, 0.431);
+}
