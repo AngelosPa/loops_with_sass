@@ -1,6 +1,6 @@
 // // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$items-count: 18; // corresponds to the number of divs in your HTML
+$items-count: 36; // corresponds to the number of divs in your HTML
 
 // Define animation
 @keyframes move {
@@ -33,6 +33,7 @@ body {
 
 @for $i from 1 through 5 {
   .item:nth-child(#{$i}) {
+    @include add-move-animation(6s);
     background: white;
     clip-path: polygon(
       49% 0%,
@@ -55,6 +56,7 @@ body {
 }
 @for $i from 5 through 10 {
   .item:nth-child(#{$i}) {
+    @include add-move-animation(6s);
     background: white;
     clip-path: polygon(
       49% 0%,
@@ -77,6 +79,7 @@ body {
 }
 @for $i from 10 through 18 {
   .item:nth-child(#{$i}) {
+    @include add-move-animation(6s);
     background: white;
     clip-path: polygon(
       49% 0%,
@@ -97,19 +100,31 @@ body {
     top: -32 + $i * 4 + rem;
   }
 }
+
 // random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
 
 .items-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100%;
   height: 3rem;
   width: 3rem;
   position: relative;
   background-color: red;
-  //@include add-move-animation(6s);
+  @include add-move-animation(6s);
 }
-
+.items-container2 {
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  background-color: blue;
+  @include add-move-animation(6 + 3s);
+}
 // // For loop to randomize values for each div bar
 // @for $i from 1 through $items-count {
 //   .item:nth-child(#{$i}) {
