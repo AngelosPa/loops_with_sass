@@ -1,26 +1,26 @@
 // // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$items-count: 20; // corresponds to the number of divs in your HTML
+$items-count: 18; // corresponds to the number of divs in your HTML
 
-// // Define animation
-// @keyframes move {
-//   0% {
-//     transform: scaleY(1);
-//   }
+// Define animation
+@keyframes move {
+  0% {
+    transform: rotate(00deg);
+  }
 
-//   100% {
-//     transform: scaleY(1.4);
-//   }
-// }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-// // Mixin to use animation
-// @mixin add-move-animation($duration) {
-//   animation-name: move;
-//   animation-duration: $duration;
-//   animation-iteration-count: infinite;
-//   animation-direction: alternate;
-//   animation-timing-function: linear;
-// }
+// Mixin to use animation
+@mixin add-move-animation($duration) {
+  animation-name: move;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
 
 body {
   background-color: black;
@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 
-@for $i from 1 through $items-count {
+@for $i from 1 through 5 {
   .item:nth-child(#{$i}) {
     background: white;
     clip-path: polygon(
@@ -49,8 +49,52 @@ body {
     width: 3rem;
     height: 3rem;
     position: absolute;
-    left: 5 + 0.5 * $i * $i + rem;
+    left: 5 + $i * $i + rem;
     top: 1 + $i * 4 + rem;
+  }
+}
+@for $i from 5 through 10 {
+  .item:nth-child(#{$i}) {
+    background: white;
+    clip-path: polygon(
+      49% 0%,
+      58% 43%,
+      100% 35%,
+      63% 52%,
+      80% 90%,
+      52% 57%,
+      20% 90%,
+      43% 53%,
+      0% 35%,
+      47% 41%
+    );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 14 + ($i * $i)/2 + rem;
+    top: 14 + $i + rem;
+  }
+}
+@for $i from 10 through 18 {
+  .item:nth-child(#{$i}) {
+    background: white;
+    clip-path: polygon(
+      49% 0%,
+      58% 43%,
+      100% 35%,
+      63% 52%,
+      80% 90%,
+      52% 57%,
+      20% 90%,
+      43% 53%,
+      0% 35%,
+      47% 41%
+    );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: -17 + ($i * $i)/5 + rem;
+    top: -32 + $i * 4 + rem;
   }
 }
 // random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
@@ -59,10 +103,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  width: 30vw;
+  height: 3rem;
+  width: 3rem;
   position: relative;
   background-color: red;
+  //@include add-move-animation(6s);
 }
 
 // // For loop to randomize values for each div bar
