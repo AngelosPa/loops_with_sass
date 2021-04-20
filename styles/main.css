@@ -1,416 +1,350 @@
 @keyframes move {
   0% {
-    transform: scaleY(1);
+    transform: rotate(0deg);
   }
   100% {
-    transform: scaleY(1.4);
+    transform: rotate(360deg);
   }
 }
 body {
   background-color: black;
-  margin: 0;
-}
-
-.items-container {
-  display: grid;
-  grid-template-columns: repeat(30, 1fr);
-  grid-template-rows: 1fr;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item:nth-child(1) {
-  background: linear-gradient(to bottom right, #ffb329, #faa200);
-  height: 39vh;
-  border-radius: 0 0 54px 20px;
-  transform-origin: 0 0;
-  border-radius: 41px 27px 0 0;
-  background: linear-gradient(to top right, #cdcdcd, dimgray);
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 6rem;
+  top: 5rem;
 }
 
 .item:nth-child(2) {
-  background: linear-gradient(to bottom right, #ffcb6b, #f09b00);
-  height: 29vh;
-  border-radius: 0 0 47px 22px;
-  transform-origin: 0 0;
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 9rem;
+  top: 9rem;
 }
 
 .item:nth-child(3) {
-  background: linear-gradient(to bottom right, #ffd78f, #e09100);
-  height: 50vh;
-  border-radius: 0 0 11px 43px;
-  transform-origin: 0 0;
-  border-radius: 35px 24px 0 0;
-  background: linear-gradient(to top right, #cacaca, dimgray);
   animation-name: move;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 14rem;
+  top: 13rem;
 }
 
 .item:nth-child(4) {
-  background: linear-gradient(to bottom right, #ffbe47, #e09100);
-  height: 46vh;
-  border-radius: 0 0 11px 33px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 21rem;
+  top: 17rem;
 }
 
 .item:nth-child(5) {
-  background: linear-gradient(to bottom right, #ffe8bd, #f09b00);
-  height: 36vh;
-  border-radius: 0 0 45px 30px;
-  transform-origin: 0 0;
-  border-radius: 27px 29px 0 0;
-  background: linear-gradient(to top right, #838383, #737373);
   animation-name: move;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 30rem;
+  top: 21rem;
+}
+
+.item:nth-child(5) {
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 26.5rem;
+  top: 19rem;
 }
 
 .item:nth-child(6) {
-  background: linear-gradient(to bottom right, #ffc761, #db8e00);
-  height: 46vh;
-  border-radius: 0 0 24px 24px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 32rem;
+  top: 20rem;
 }
 
 .item:nth-child(7) {
-  background: linear-gradient(to bottom right, #ffb52e, #eb9800);
-  height: 63vh;
-  border-radius: 0 0 16px 58px;
-  transform-origin: 0 0;
-  border-radius: 38px 12px 0 0;
-  background: linear-gradient(to top right, #d7d7d7, #767676);
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 38.5rem;
+  top: 21rem;
 }
 
 .item:nth-child(8) {
-  background: linear-gradient(to bottom right, #ffc761, #d68b00);
-  height: 26vh;
-  border-radius: 0 0 19px 14px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 46rem;
+  top: 22rem;
 }
 
 .item:nth-child(9) {
-  background: linear-gradient(to bottom right, #ffcb6b, #eb9800);
-  height: 17vh;
-  border-radius: 0 0 25px 34px;
-  transform-origin: 0 0;
-  border-radius: 12px 20px 0 0;
-  background: linear-gradient(to top right, #c5c5c5, #6c6c6c);
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 54.5rem;
+  top: 23rem;
 }
 
 .item:nth-child(10) {
-  background: linear-gradient(to bottom right, #ffc252, #cc8400);
-  height: 39vh;
-  border-radius: 0 0 12px 26px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 64rem;
+  top: 24rem;
+}
+
+.item:nth-child(10) {
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 3rem;
+  top: 8rem;
 }
 
 .item:nth-child(11) {
-  background: linear-gradient(to bottom right, #ffcb6b, #e09100);
-  height: 65vh;
-  border-radius: 0 0 11px 60px;
-  transform-origin: 0 0;
-  border-radius: 36px 13px 0 0;
-  background: linear-gradient(to top right, #cfcfcf, #767676);
   animation-name: move;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 7.2rem;
+  top: 12rem;
 }
 
 .item:nth-child(12) {
-  background: linear-gradient(to bottom right, #ffa90a, #d18700);
-  height: 45vh;
-  border-radius: 0 0 53px 17px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 11.8rem;
+  top: 16rem;
 }
 
 .item:nth-child(13) {
-  background: linear-gradient(to bottom right, #ffb938, #f59e00);
-  height: 60vh;
-  border-radius: 0 0 29px 27px;
-  transform-origin: 0 0;
-  border-radius: 58px 20px 0 0;
-  background: linear-gradient(to top right, #cdcdcd, #717171);
   animation-name: move;
-  animation-duration: 2s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 16.8rem;
+  top: 20rem;
 }
 
 .item:nth-child(14) {
-  background: linear-gradient(to bottom right, #ffc966, #f09b00);
-  height: 70vh;
-  border-radius: 0 0 56px 44px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 2s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 22.2rem;
+  top: 24rem;
 }
 
 .item:nth-child(15) {
-  background: linear-gradient(to bottom right, #ffc252, #cc8400);
-  height: 17vh;
-  border-radius: 0 0 25px 46px;
-  transform-origin: 0 0;
-  border-radius: 38px 18px 0 0;
-  background: linear-gradient(to top right, #cfcfcf, #7d7d7d);
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 28rem;
+  top: 28rem;
 }
 
 .item:nth-child(16) {
-  background: linear-gradient(to bottom right, #ffd485, #e69500);
-  height: 30vh;
-  border-radius: 0 0 36px 35px;
-  transform-origin: 0 0;
   animation-name: move;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 34.2rem;
+  top: 32rem;
 }
 
 .item:nth-child(17) {
-  background: linear-gradient(to bottom right, #ffc761, #db8e00);
-  height: 39vh;
-  border-radius: 0 0 60px 40px;
-  transform-origin: 0 0;
-  border-radius: 26px 16px 0 0;
-  background: linear-gradient(to top right, #d9d9d9, #737373);
   animation-name: move;
-  animation-duration: 2s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 40.8rem;
+  top: 36rem;
 }
 
 .item:nth-child(18) {
-  background: linear-gradient(to bottom right, #ffebc7, #e69500);
-  height: 46vh;
-  border-radius: 0 0 45px 60px;
-  transform-origin: 0 0;
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
+  background: white;
+  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 47.8rem;
+  top: 40rem;
 }
 
-.item:nth-child(19) {
-  background: linear-gradient(to bottom right, #ffd68a, #f59e00);
-  height: 11vh;
-  border-radius: 0 0 39px 49px;
-  transform-origin: 0 0;
-  border-radius: 33px 25px 0 0;
-  background: linear-gradient(to top right, #9a9a9a, #787878);
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(20) {
-  background: linear-gradient(to bottom right, #ffe8bd, #f59e00);
-  height: 14vh;
-  border-radius: 0 0 55px 36px;
-  transform-origin: 0 0;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(21) {
-  background: linear-gradient(to bottom right, #ffb938, #d68b00);
-  height: 45vh;
-  border-radius: 0 0 56px 53px;
-  transform-origin: 0 0;
-  border-radius: 20px 30px 0 0;
-  background: linear-gradient(to top right, #e1e1e1, #676767);
-  animation-name: move;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(22) {
-  background: linear-gradient(to bottom right, #ffdd9e, #eb9800);
-  height: 42vh;
-  border-radius: 0 0 32px 57px;
-  transform-origin: 0 0;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(23) {
-  background: linear-gradient(to bottom right, #ffbb3d, #faa200);
-  height: 65vh;
-  border-radius: 0 0 44px 20px;
-  transform-origin: 0 0;
-  border-radius: 17px 30px 0 0;
-  background: linear-gradient(to top right, #d9d9d9, #6e6e6e);
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  background-color: red;
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
 }
 
-.item:nth-child(24) {
-  background: linear-gradient(to bottom right, #ffdd9e, #f09b00);
-  height: 12vh;
-  border-radius: 0 0 19px 59px;
-  transform-origin: 0 0;
+.items-container2 {
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  background-color: blue;
   animation-name: move;
-  animation-duration: 4s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-timing-function: linear;
-}
-
-.item:nth-child(25) {
-  background: linear-gradient(to bottom right, #ffc761, #faa200);
-  height: 70vh;
-  border-radius: 0 0 37px 23px;
-  transform-origin: 0 0;
-  border-radius: 35px 12px 0 0;
-  background: linear-gradient(to top right, #cacaca, #787878);
-  animation-name: move;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(26) {
-  background: linear-gradient(to bottom right, #ffb01f, #db8e00);
-  height: 26vh;
-  border-radius: 0 0 55px 13px;
-  transform-origin: 0 0;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(27) {
-  background: linear-gradient(to bottom right, #ffb329, #faa200);
-  height: 12vh;
-  border-radius: 0 0 39px 53px;
-  transform-origin: 0 0;
-  border-radius: 58px 13px 0 0;
-  background: linear-gradient(to top right, #e6e6e6, #6e6e6e);
-  animation-name: move;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(28) {
-  background: linear-gradient(to bottom right, #ffc966, #db8e00);
-  height: 68vh;
-  border-radius: 0 0 33px 44px;
-  transform-origin: 0 0;
-  animation-name: move;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(29) {
-  background: linear-gradient(to bottom right, #ffac14, #f59e00);
-  height: 51vh;
-  border-radius: 0 0 12px 15px;
-  transform-origin: 0 0;
-  border-radius: 57px 26px 0 0;
-  background: linear-gradient(to top right, #bdbdbd, #6c6c6c);
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(30) {
-  background: linear-gradient(to bottom right, #ffe4b3, #e09100);
-  height: 61vh;
-  border-radius: 0 0 11px 58px;
-  transform-origin: 0 0;
-  animation-name: move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.item:nth-child(odd) {
-  align-self: end;
-  transform-origin: 0 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
