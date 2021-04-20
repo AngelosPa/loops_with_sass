@@ -26,17 +26,27 @@ $stars-count: 36; // corresponds to the number of divs in your HTML
   animation-duration: $duration;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+  animation-timing-function: ease-in-out;
 }
 @keyframes light {
   0% {
     box-shadow: 0 0 6px 2px rgb(73, 3, 3),
       -4px -0px 20px -1px rgba(105, 7, 7, 0.431);
   }
+  50% {
+    box-shadow: 0 0 6px 2px rgb(73, 3, 3),
+      -4px -0px 20px -1px rgba(105, 7, 7, 0.431);
+    box-shadow: 0 0 60px 2px rgb(151, 7, 7),
+      -4px -0px 20px -1px rgba(255, 231, 124, 0.431);
+
+    transform: scale(1.1);
+  }
 
   100% {
-    box-shadow: 0 0 6px 2px rgb(255, 255, 255),
+    box-shadow: 0 0 60px 2px rgb(255, 255, 255),
       -4px -0px 20px -1px rgba(255, 231, 124, 0.431);
+
+    transform: scale(0.1);
   }
 }
 
@@ -44,18 +54,7 @@ $stars-count: 36; // corresponds to the number of divs in your HTML
 @mixin sterne {
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  //   clip-path: polygon(
-  //     49% 0%,
-  //     58% 43%,
-  //     100% 35%,
-  //     63% 52%,
-  //     80% 90%,
-  //     52% 57%,
-  //     20% 90%,
-  //     43% 53%,
-  //     0% 35%,
-  //     47% 41%
-  //   );
+  border-radius: ((random(50) + 100 + px)) ((random(20) + 100 + px)) 0 0;
   border-radius: 50%;
 
   box-shadow: 0 0 6px 2px rgb(16, 2, 98),
@@ -139,15 +138,13 @@ body {
   background: linear-gradient(#806b0e, #f3f3e3);
   box-shadow: 0px 0px 15px 1px rgba(243, 245, 148, 0.637);
   @include add-move-animation(6+3s);
+  @include lightanime(6s);
 }
 // For loop to randomize values for each div bar
-@for $i from 1 through $stars-count {
-  .star:nth-child(#{$i}) {
-    @if (fibonacci($i) != 0) {
-      border-radius: ((random(50) + 100 + px)) ((random(20) + 100 + px)) 0 0;
-      @include lightanime(5s);
-    }
-    // The lighten() function increases lightness by a fixed amount.
-    // The darken() function decreases lightness by a fixed amount.
-  }
-}
+// @for $i from 1 through $stars-count {
+//   .star:nth-child(#{$i}) {
+//     @if ($i % 2 + random(20) !=0) {
+//       @include lightanime(3s);
+//     }
+//   }
+// }
