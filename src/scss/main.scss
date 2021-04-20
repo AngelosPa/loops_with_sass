@@ -1,6 +1,6 @@
 // // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// $items-count: 30; // corresponds to the number of divs in your HTML
+$items-count: 20; // corresponds to the number of divs in your HTML
 
 // // Define animation
 // @keyframes move {
@@ -22,17 +22,31 @@
 //   animation-timing-function: linear;
 // }
 
-// body {
-//   background-color: black;
-//   margin: 0;
-// }
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-// .items-container {
-//   display: grid;
-//   grid-template-columns: repeat($items-count, 1fr);
-//   grid-template-rows: 1fr;
-//   height: 100vh;
-// }
+@for $i from 1 through $items-count {
+  .item:nth-child(#{$i}) {
+    background: white;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+// random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 30vw;
+}
 
 // // For loop to randomize values for each div bar
 // @for $i from 1 through $items-count {
