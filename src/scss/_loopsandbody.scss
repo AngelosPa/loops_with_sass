@@ -87,3 +87,24 @@ body {
     }
   }
 }
+
+// $ba: 360deg / number of balls $number-balls;
+// $g-balls: 4rem;
+
+// .balls {
+//   @for $i from 1 to $number-balls + 1 {
+//     &:nth-child(#{$i}) {
+//       transform: rotate($i * $ba) translate($d-ring * 0.5);
+//       &::after {
+//       }
+//     }
+//   }
+//   &:after {
+//     border: 5px solid $bg;
+//     width: $g-balls;
+//     height: $g-balls;
+//     background: blue;
+//     margin: -0.5 * $g-balls;
+//     content: "";
+//   }
+// }
