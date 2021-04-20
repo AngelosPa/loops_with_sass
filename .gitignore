@@ -1,2 +1,4 @@
 node_modules
- dist src/styles
+
+dist
+src/styles
