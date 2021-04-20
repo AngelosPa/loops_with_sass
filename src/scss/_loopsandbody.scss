@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include add-move-animation(11 + 3s);
+  @include add-move-animation(11s);
 }
 
 @for $i from 1 through 5 {
@@ -35,7 +35,7 @@ body {
 }
 @for $i from 10 through 18 {
   .star:nth-child(#{$i}) {
-    @include add-move-animation(6s + $i + s);
+    @include add-move-animation(6s);
     @include sterne();
     width: 1.2rem;
     height: 1.2rem;
@@ -79,11 +79,11 @@ body {
   @include add-move-animation(6+3s);
   @include lightanime(5s);
 }
-// For loop to randomize values for each div bar
-// @for $i from 1 through $stars-count {
-//   .star:nth-child(#{$i}) {
-//     @if ($i % 2 + random(20) !=0) {
-//       @include lightanime(3s);
-//     }
-//   }
-// }
+//For loop to randomize values for each div bar
+@for $i from 1 through $stars-count {
+  .star:nth-child(#{$i}) {
+    @if (random(4) ==1) {
+      @include lightanime(3s);
+    }
+  }
+}
