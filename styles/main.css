@@ -8,16 +8,16 @@
 }
 @keyframes light {
   0% {
-    box-shadow: 0 0 6px 2px #490303, -4px 0px 20px -1px rgba(105, 7, 7, 0.431);
+    box-shadow: 0 0 40px 2px #490303, -4px 0px 20px -100px rgba(202, 178, 39, 0.678);
   }
   50% {
-    box-shadow: 0 0 6px 2px #490303, -4px 0px 20px -1px rgba(105, 7, 7, 0.431);
-    box-shadow: 0 0 60px 2px #970707, -4px 0px 20px -1px rgba(255, 231, 124, 0.431);
+    box-shadow: 0 0 40px 2px #e2e2e2, -4px 0px 20px -100px rgba(190, 32, 32, 0.822);
+    box-shadow: 0 0 40px 20px #970707, -4px 0px 40px -100px rgba(255, 231, 124, 0.431);
     transform: scale(1.1);
   }
   100% {
     box-shadow: 0 0 60px 2px white, -4px 0px 20px -1px rgba(255, 231, 124, 0.431);
-    transform: scale(0.1);
+    transform: scale(0.01);
   }
 }
 body {
@@ -42,7 +42,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 124px 103px 0 0;
+  border-radius: 148px 119px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.5rem;
@@ -59,7 +59,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 116px 110px 0 0;
+  border-radius: 127px 104px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.5rem;
@@ -76,7 +76,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 140px 115px 0 0;
+  border-radius: 107px 112px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.5rem;
@@ -93,7 +93,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 134px 118px 0 0;
+  border-radius: 116px 110px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.5rem;
@@ -110,7 +110,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 149px 118px 0 0;
+  border-radius: 104px 107px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.5rem;
@@ -127,7 +127,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 119px 110px 0 0;
+  border-radius: 144px 107px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -144,7 +144,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 117px 101px 0 0;
+  border-radius: 139px 118px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -161,7 +161,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 137px 109px 0 0;
+  border-radius: 104px 102px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -178,7 +178,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 106px 117px 0 0;
+  border-radius: 119px 103px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -195,7 +195,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 144px 103px 0 0;
+  border-radius: 134px 103px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -212,7 +212,7 @@ body {
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 126px 106px 0 0;
+  border-radius: 131px 108px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.9rem;
@@ -223,13 +223,13 @@ body {
 
 .star:nth-child(10) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 16ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 109px 101px 0 0;
+  border-radius: 118px 118px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -240,13 +240,13 @@ body {
 
 .star:nth-child(11) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 17ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 102px 103px 0 0;
+  border-radius: 131px 109px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -257,13 +257,13 @@ body {
 
 .star:nth-child(12) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 18ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 111px 101px 0 0;
+  border-radius: 144px 109px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -274,13 +274,13 @@ body {
 
 .star:nth-child(13) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 19ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 107px 114px 0 0;
+  border-radius: 114px 110px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -291,13 +291,13 @@ body {
 
 .star:nth-child(14) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 20ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 128px 120px 0 0;
+  border-radius: 137px 109px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -308,13 +308,13 @@ body {
 
 .star:nth-child(15) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 21ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 121px 114px 0 0;
+  border-radius: 131px 103px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -325,13 +325,13 @@ body {
 
 .star:nth-child(16) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 22ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 126px 116px 0 0;
+  border-radius: 110px 109px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -342,13 +342,13 @@ body {
 
 .star:nth-child(17) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 23ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 144px 101px 0 0;
+  border-radius: 143px 112px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -359,13 +359,13 @@ body {
 
 .star:nth-child(18) {
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 24ss;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
-  border-radius: 117px 116px 0 0;
+  border-radius: 130px 105px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
   width: 1.2rem;
@@ -384,7 +384,7 @@ body {
   position: relative;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.8), #003366, #000d1a, #000d1a, #000d1a, #000000c2);
   animation-name: move;
-  animation-duration: 6s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: ease-in-out;
@@ -407,9 +407,9 @@ body {
   animation-direction: normal;
   animation-timing-function: ease-in-out;
   animation-name: light;
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 
