@@ -6,6 +6,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes light {
+  0% {
+    box-shadow: 0 0 6px 2px #490303, -4px 0px 20px -1px rgba(105, 7, 7, 0.431);
+  }
+  100% {
+    box-shadow: 0 0 6px 2px white, -4px 0px 20px -1px rgba(255, 231, 124, 0.431);
+  }
+}
 body {
   background-color: black;
   height: 100vh;
@@ -13,309 +21,334 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: move;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
 }
 
-.item:nth-child(1) {
+.star:nth-child(1) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.5rem;
+  height: 1.5rem;
   left: 6rem;
   top: 5rem;
 }
 
-.item:nth-child(2) {
+.star:nth-child(2) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.5rem;
+  height: 1.5rem;
   left: 9rem;
   top: 9rem;
 }
 
-.item:nth-child(3) {
+.star:nth-child(3) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.5rem;
+  height: 1.5rem;
   left: 14rem;
   top: 13rem;
 }
 
-.item:nth-child(4) {
+.star:nth-child(4) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.5rem;
+  height: 1.5rem;
   left: 21rem;
   top: 17rem;
 }
 
-.item:nth-child(5) {
+.star:nth-child(5) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.5rem;
+  height: 1.5rem;
   left: 30rem;
   top: 21rem;
 }
 
-.item:nth-child(5) {
+.star:nth-child(5) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 26.5rem;
   top: 19rem;
 }
 
-.item:nth-child(6) {
+.star:nth-child(6) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 32rem;
   top: 20rem;
 }
 
-.item:nth-child(7) {
+.star:nth-child(7) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 38.5rem;
   top: 21rem;
 }
 
-.item:nth-child(8) {
+.star:nth-child(8) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 46rem;
   top: 22rem;
 }
 
-.item:nth-child(9) {
+.star:nth-child(9) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 54.5rem;
   top: 23rem;
 }
 
-.item:nth-child(10) {
+.star:nth-child(10) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.9rem;
+  height: 1.8rem;
   left: 64rem;
   top: 24rem;
 }
 
-.item:nth-child(10) {
+.star:nth-child(10) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 3rem;
   top: 8rem;
 }
 
-.item:nth-child(11) {
+.star:nth-child(11) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 7.2rem;
   top: 12rem;
 }
 
-.item:nth-child(12) {
+.star:nth-child(12) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 11.8rem;
   top: 16rem;
 }
 
-.item:nth-child(13) {
+.star:nth-child(13) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 16.8rem;
   top: 20rem;
 }
 
-.item:nth-child(14) {
+.star:nth-child(14) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 22.2rem;
   top: 24rem;
 }
 
-.item:nth-child(15) {
+.star:nth-child(15) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 28rem;
   top: 28rem;
 }
 
-.item:nth-child(16) {
+.star:nth-child(16) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 34.2rem;
   top: 32rem;
 }
 
-.item:nth-child(17) {
+.star:nth-child(17) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 40.8rem;
   top: 36rem;
 }
 
-.item:nth-child(18) {
+.star:nth-child(18) {
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
-  background: white;
-  clip-path: polygon(49% 0%, 58% 43%, 100% 35%, 63% 52%, 80% 90%, 52% 57%, 20% 90%, 43% 53%, 0% 35%, 47% 41%);
-  width: 3rem;
-  height: 3rem;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(0.15turn, #10a6c081, #1755ffb0, #ffffff);
   position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px #100262, -4px 0px 20px -1px rgba(255, 255, 255, 0.431);
+  width: 1.2rem;
+  height: 1.2rem;
   left: 47.8rem;
   top: 40rem;
 }
 
-.items-container {
+.stars-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,28 +356,354 @@ body {
   height: 3rem;
   width: 3rem;
   position: relative;
-  background-color: red;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.8), #003366, #000d1a, #000d1a, #000d1a, #000000c2);
   animation-name: move;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
 }
 
-.items-container2 {
+.stars-container2 {
   display: flex;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  width: 3rem;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 3rem;
   position: relative;
-  background-color: blue;
+  background: linear-gradient(#806b0e, #f3f3e3);
+  box-shadow: 0px 0px 15px 1px rgba(243, 245, 148, 0.637);
   animation-name: move;
   animation-duration: 9s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+}
+
+.star:nth-child(1) {
+  border-radius: 105px 106px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(2) {
+  border-radius: 111px 103px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(3) {
+  border-radius: 131px 102px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(4) {
+  border-radius: 121px 105px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(5) {
+  border-radius: 121px 107px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(6) {
+  border-radius: 140px 119px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(7) {
+  border-radius: 138px 113px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(8) {
+  border-radius: 147px 115px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(9) {
+  border-radius: 145px 112px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(10) {
+  border-radius: 149px 114px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(11) {
+  border-radius: 115px 106px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(12) {
+  border-radius: 149px 115px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(13) {
+  border-radius: 114px 104px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(14) {
+  border-radius: 143px 119px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(15) {
+  border-radius: 131px 106px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(16) {
+  border-radius: 122px 110px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(17) {
+  border-radius: 116px 105px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(18) {
+  border-radius: 134px 114px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(19) {
+  border-radius: 130px 118px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(20) {
+  border-radius: 102px 101px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(21) {
+  border-radius: 136px 117px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(22) {
+  border-radius: 117px 118px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(23) {
+  border-radius: 128px 109px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(24) {
+  border-radius: 147px 116px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(25) {
+  border-radius: 140px 117px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(26) {
+  border-radius: 134px 114px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(27) {
+  border-radius: 144px 109px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(28) {
+  border-radius: 115px 104px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(29) {
+  border-radius: 123px 117px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(30) {
+  border-radius: 145px 119px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(31) {
+  border-radius: 135px 119px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(32) {
+  border-radius: 109px 120px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(33) {
+  border-radius: 133px 104px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(34) {
+  border-radius: 118px 102px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(35) {
+  border-radius: 103px 106px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
+}
+
+.star:nth-child(36) {
+  border-radius: 115px 112px 0 0;
+  animation-name: light;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.1, -4.6, 0.2, 0);
 }
 
 /*# sourceMappingURL=main.css.map */
