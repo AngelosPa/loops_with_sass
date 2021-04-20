@@ -1,6 +1,6 @@
-// // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// //thats for bootstrap i keep it here  @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$items-count: 36; // corresponds to the number of divs in your HTML
+$stars-count: 36; // corresponds to the number of divs in your HTML
 
 // Define animation
 @keyframes move {
@@ -22,6 +22,26 @@ $items-count: 36; // corresponds to the number of divs in your HTML
   animation-timing-function: linear;
 }
 
+// Mixin to make the stars
+@mixin sterne {
+  background: white;
+  border-radius: 100%;
+
+  //   clip-path: polygon(
+  //     49% 0%,
+  //     58% 43%,
+  //     100% 35%,
+  //     63% 52%,
+  //     80% 90%,
+  //     52% 57%,
+  //     20% 90%,
+  //     43% 53%,
+  //     0% 35%,
+  //     47% 41%
+  //   );
+  box-shadow: 1rem 1rem 1rem 1rem blue;
+}
+
 body {
   background-color: black;
   height: 100vh;
@@ -29,72 +49,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include add-move-animation(11 + 3s);
 }
 
 @for $i from 1 through 5 {
-  .item:nth-child(#{$i}) {
+  .star:nth-child(#{$i}) {
     @include add-move-animation(6s);
-    background: white;
-    clip-path: polygon(
-      49% 0%,
-      58% 43%,
-      100% 35%,
-      63% 52%,
-      80% 90%,
-      52% 57%,
-      20% 90%,
-      43% 53%,
-      0% 35%,
-      47% 41%
-    );
-    width: 3rem;
-    height: 3rem;
+    @include sterne();
+
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     left: 5 + $i * $i + rem;
     top: 1 + $i * 4 + rem;
   }
 }
 @for $i from 5 through 10 {
-  .item:nth-child(#{$i}) {
+  .star:nth-child(#{$i}) {
     @include add-move-animation(6s);
-    background: white;
-    clip-path: polygon(
-      49% 0%,
-      58% 43%,
-      100% 35%,
-      63% 52%,
-      80% 90%,
-      52% 57%,
-      20% 90%,
-      43% 53%,
-      0% 35%,
-      47% 41%
-    );
-    width: 3rem;
-    height: 3rem;
+    @include sterne();
+    width: 1.9rem;
+    height: 1.8rem;
     position: absolute;
     left: 14 + ($i * $i)/2 + rem;
     top: 14 + $i + rem;
   }
 }
 @for $i from 10 through 18 {
-  .item:nth-child(#{$i}) {
+  .star:nth-child(#{$i}) {
     @include add-move-animation(6s);
-    background: white;
-    clip-path: polygon(
-      49% 0%,
-      58% 43%,
-      100% 35%,
-      63% 52%,
-      80% 90%,
-      52% 57%,
-      20% 90%,
-      43% 53%,
-      0% 35%,
-      47% 41%
-    );
-    width: 3rem;
-    height: 3rem;
+    @include sterne();
+    width: 1.2rem;
+    height: 1.2rem;
     position: absolute;
     left: -17 + ($i * $i)/5 + rem;
     top: -32 + $i * 4 + rem;
@@ -103,7 +89,7 @@ body {
 
 // random() will return a number between 1-100 with no argument being passed to it, or when you pass in a single integer parameter to define the upper limit. random(20) will return a number between 1-20.
 
-.items-container {
+.stars-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,23 +97,33 @@ body {
   height: 3rem;
   width: 3rem;
   position: relative;
-  background-color: red;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.8),
+    #003366,
+    #000d1a,
+    #000d1a,
+    #000d1a,
+    #000000c2
+  );
   @include add-move-animation(6s);
 }
-.items-container2 {
+.stars-container2 {
   display: flex;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  width: 3rem;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 3rem;
   position: relative;
-  background-color: blue;
-  @include add-move-animation(6 + 3s);
+  background: linear-gradient(#806b0e, #f3f3e3);
+  box-shadow: 0px 0px 15px 1px rgba(243, 245, 148, 0.637);
+  @include add-move-animation(6+3s);
 }
 // // For loop to randomize values for each div bar
-// @for $i from 1 through $items-count {
-//   .item:nth-child(#{$i}) {
+// @for $i from 1 through $stars-count {
+//   .star:nth-child(#{$i}) {
 //     background: linear-gradient(
 //       to bottom right,
 //       lighten(orange, random(40)),
@@ -152,7 +148,7 @@ body {
 //   }
 // }
 
-// .item:nth-child(odd) {
+// .star:nth-child(odd) {
 //   align-self: end;
 //   transform-origin: 0 100%;
 // }
