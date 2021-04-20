@@ -10,7 +10,7 @@
   animation-name: light;
   animation-duration: $duration;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 @mixin sterne {
