@@ -1,6 +1,6 @@
 # loops_with_sass 
 
-![check here](sassloops.png)
+
 
  <img src="./sassloops.png" alt="Logo" width="336" height="236">
   <p align="center">
