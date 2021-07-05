@@ -2,7 +2,7 @@
 
 
 <p  align="center">
- <img src="./sassloops.png" alt="Logo" width="336" height="236">
+ <img src="./sassloops.png" alt="Logo" width="396" height="296">
   <p align="center">
   <strong> planets with SASS </strong>
 an example of loops in SASS using also animations
