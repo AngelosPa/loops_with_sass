@@ -1,8 +1,8 @@
 # loops_with_sass 
 
 
-
- <img align="center" src="./sassloops.png" alt="Logo" width="336" height="236">
+<p  align="center">
+ <img src="./sassloops.png" alt="Logo" width="336" height="236">
   <p align="center">
   <strong> planets with SASS </strong>
 an example of loops in SASS using also animations
